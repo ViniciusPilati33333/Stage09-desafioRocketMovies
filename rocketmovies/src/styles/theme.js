@@ -7,5 +7,7 @@ export default {
 
     GRAY_300: "#312E38",
     WHITE: "#F4EDE8",
+    LINE: "#3E3B47",
+    WORDS: "#948F99",
   },
 };
