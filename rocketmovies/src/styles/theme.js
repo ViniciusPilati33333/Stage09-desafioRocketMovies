@@ -9,5 +9,6 @@ export default {
     WHITE: "#F4EDE8",
     LINE: "#3E3B47",
     WORDS: "#948F99",
+    CARD: "#402f32",
   },
 };

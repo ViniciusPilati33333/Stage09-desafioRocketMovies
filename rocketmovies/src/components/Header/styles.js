@@ -32,7 +32,8 @@ export const Profile = styled.div`
     color: ${({ theme }) => theme.COLORS.WORDS};
     margin-right: 64px;
     border: none;
-    padding: 19px;
+    padding-left: 19px;
+    
   }
 
   > img {
