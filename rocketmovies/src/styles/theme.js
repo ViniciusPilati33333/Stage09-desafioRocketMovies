@@ -10,5 +10,7 @@ export default {
     LINE: "#3E3B47",
     WORDS: "#948F99",
     CARD: "#402f32",
+    DESC: "#999591",
+    BLACK: "#0D0C0F",
   },
 };
