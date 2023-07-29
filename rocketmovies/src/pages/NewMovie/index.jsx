@@ -1,12 +1,13 @@
-import { Container, Form, Section2 } from './styles';
+import { Container, Form, } from './styles';
 import { Header } from "../../components/Header";
 import { ButtonText } from '../../components/ButtonText';
+import { Button } from '../../components/Button'
 import { FiArrowLeft, FiX } from 'react-icons/fi';
 
 import { Input } from '../../components/Input';
 import { Textarea } from '../../components/Textarea';
 import { Section } from '../../components/Section';
-import {Tag} from '../../components/Tag';
+import { NoteItem } from '../../components/NoteItem';
 
 
 export function NewMovie() {
@@ -28,14 +29,18 @@ export function NewMovie() {
                     </div>
                     <Textarea placeholder='Observações'/>
 
-                    <Section title='Marcadores' />
-                   
-                     <Section2>
-                        <Tag title='React'>
-                            <FiX />
-                        </Tag>
-                        <Tag title='Novo Marcador'/>
-                     </Section2>
+                     <Section title="Marcadores">
+                        <div className='tags'>
+                            <NoteItem value="React"/>
+                            <NoteItem placeholder="Novo Marcador" isNew />
+                        </div>
+                     </Section>
+
+                    <div className='buttons'>
+                     <button id='one'>Excluir Filme</button>
+                     <button id='two'>Salvar Alterações</button>
+                    </div>
+
                 </Form>
             </main>
         </Container>

@@ -10,12 +10,20 @@ export const Container = styled.div`
     "header"
     "content";
 
+  .tags {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: ${({ theme }) => theme.COLORS.BLACK};
+    margin-top: 24px;
+    border-radius: 8px;
+  }
+
   > main {
     width: 100%;
     padding: 60px;
     grid-area: content;
     overflow-y: auto;
-
 
     h1 {
       margin-bottom: 40px;
@@ -29,7 +37,7 @@ export const Container = styled.div`
     margin-bottom: 24px;
 
     > svg {
-        color: ${({theme}) => theme.COLORS.PINK};
+      color: ${({ theme }) => theme.COLORS.PINK};
     }
   }
 `; 
@@ -41,12 +49,35 @@ export const Form = styled.form`
     display: flex;
   }
 
+  > .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    > button {
+      width: 700px;
+      height: 56px;
+
+      border: 0;
+      padding: 0 16px;
+      margin-top: 16px;
+      border-radius: 10px;
+      font-weight: 500; //medium
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+
+    > #one {
+      background-color: ${({ theme }) => theme.COLORS.BLACK};
+      color: ${({ theme }) => theme.COLORS.PINK};
+    }
+
+    > #two {
+      background-color: ${({ theme }) => theme.COLORS.PINK};
+      color: ${({ theme }) => theme.COLORS.GRAY_300};
+    }
+  }
 `;
 
-export const Section2 = styled.div`
-  grid-area: content;
-  width: 100%;
-  height: 88px;
-  border-radius: 10px;
-  background-color: ${({ theme }) => theme.COLORS.BLACK};
-`;
