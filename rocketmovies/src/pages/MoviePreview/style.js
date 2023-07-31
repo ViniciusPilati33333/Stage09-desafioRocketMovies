@@ -22,5 +22,28 @@ export const Container = styled.div`
       align-items: center;
       gap: 19px;
     }
+
+    .whichUser {
+      margin-top: 24px;
+      margin-bottom: 40px;
+      color: ${({theme}) => theme.COLORS.WHITE};
+
+
+      img {
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .tagsMovie {
+      margin-bottom: 40px;
+    }
+
+    p {
+     text-align: justify;
+     padding-bottom: 40px;
+    }
+
   }
 `;
