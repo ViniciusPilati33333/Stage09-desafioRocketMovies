@@ -12,5 +12,6 @@ export default {
     CARD: "#402f32",
     DESC: "#999591",
     BLACK: "#0D0C0F",
+    PFORM: "#CAC4CF",
   },
 };
