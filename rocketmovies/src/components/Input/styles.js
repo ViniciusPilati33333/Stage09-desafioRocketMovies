@@ -5,13 +5,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   color: ${({ theme }) => theme.COLORS.GRAY_300};
-
   margin-bottom: 8px;
-  
+  border-radius: 10px;
+
   > input {
-    border-radius: 10px;
     height: 56px;
     width: 100%;
     padding: 12px;

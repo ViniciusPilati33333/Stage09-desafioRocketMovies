@@ -5,4 +5,5 @@ export const Container = styled.button`
     color: ${({theme}) => theme.COLORS.PINK};
     border: none;
     font-size: 16px;
+    margin: 5px;
 `;
