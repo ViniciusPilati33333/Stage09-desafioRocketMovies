@@ -47,6 +47,7 @@ export const Form = styled.form`
 
   > div {
     display: flex;
+    gap: 16px;
   }
 
   > .buttons {

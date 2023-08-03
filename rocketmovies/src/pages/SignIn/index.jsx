@@ -3,6 +3,7 @@ import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
 import { FiLock, FiMail } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 export function SignIn() {
     return(
@@ -18,7 +19,10 @@ export function SignIn() {
 
             <div className='btns'>
                  <Button title='Entrar'/>
+
+                <Link to='/register'>
                  <ButtonText title='Criar conta'/>
+                </Link> 
             </div>    
             </Form>
 

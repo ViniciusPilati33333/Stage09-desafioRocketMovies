@@ -10,7 +10,7 @@ import { Profile } from '../pages/Profile';
 export function AppRoutes() {
     return(
         <Routes>
-            <Route path='/details/:id' element={<Details />} />
+            <Route path='/' element={<Details />} />
             <Route path='/newmovie' element={<NewMovie />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/moviePreview' element={<MoviePreview />} />

@@ -25,6 +25,10 @@ export const PhraseSection = styled.section`
   justify-content: space-between;
   align-items: center;
   margin-left: 100px;
+  
+  p {
+     color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  }
 `;
 
 export const NewMovie = styled.button`

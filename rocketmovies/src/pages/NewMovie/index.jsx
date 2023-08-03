@@ -8,6 +8,7 @@ import { Input } from '../../components/Input';
 import { Textarea } from '../../components/Textarea';
 import { Section } from '../../components/Section';
 import { NoteItem } from '../../components/NoteItem';
+import { Link } from 'react-router-dom';
 
 
 export function NewMovie() {
@@ -18,7 +19,9 @@ export function NewMovie() {
             <main>
                 <div className="return">
                    <FiArrowLeft />
-                   <ButtonText title='Voltar'></ButtonText> 
+                   <Link to='/'>
+                       <ButtonText title='Voltar'></ButtonText> 
+                   </Link>
                 </div>
 
                     <h1>Novo filme</h1>

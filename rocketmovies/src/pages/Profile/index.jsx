@@ -3,14 +3,17 @@ import { ButtonText } from '../../components/ButtonText';
 import { Input } from '../../components/Input'
 import {Button} from '../../components/Button';
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 export function Profile() {
     return(
         <Container>
 
           <header>
-            <FiArrowLeft />
-            <ButtonText title='Voltar'/>
+              <FiArrowLeft />
+            <Link to='/'>
+              <ButtonText title='Voltar'/>
+            </Link>
           </header>  
 
           <Form>

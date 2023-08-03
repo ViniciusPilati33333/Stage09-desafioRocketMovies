@@ -3,23 +3,23 @@ import { Header } from '../../components/Header'
 import { FiPlus } from 'react-icons/fi';
 import { Stars } from '../../components/Stars';
 import { Tag } from '../../components/Tag';
+import { Link } from 'react-router-dom';
 
 export function Details() {
     return(
         <Container>
-
             <Header />
-
     <main>
         <content>
-           <PhraseSection>
+        <PhraseSection>
             Meus filmes
-             <NewMovie>
-                <FiPlus/>
-            Adicionar filme
-            </NewMovie>
+            <Link to='/newmovie'>
+                <NewMovie>
+                        <FiPlus/>
+                        <span>Adicionar filme</span>
+                </NewMovie>
+            </Link>
         </PhraseSection>
-
 
         <Movies>
             <h1>Interestelar</h1>
@@ -36,7 +36,6 @@ Além de Cooper, a tripulação da Endurance é formada pela bióloga Amelia, fi
                 <Tag title='Drama'/>
                 <Tag title='Familia'/>
             </section>
-          
         </Movies>
 
         <Movies>
@@ -55,7 +54,6 @@ Além de Cooper, a tripulação da Endurance é formada pela bióloga Amelia, fi
             </section>
           
         </Movies>
-
 
         <Movies>
             <h1>Interestelar</h1>
