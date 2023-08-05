@@ -2,18 +2,18 @@
 
 import { Routes, Route } from 'react-router-dom';
 
+import { Home } from '../pages/Home';
 import { Details } from '../pages/Details';
-import { MoviePreview } from '../pages/MoviePreview';
 import { NewMovie } from '../pages/NewMovie';
 import { Profile } from '../pages/Profile';
 
 export function AppRoutes() {
     return(
         <Routes>
-            <Route path='/' element={<Details />} />
+            <Route path='/' element={<Home />} />
             <Route path='/newmovie' element={<NewMovie />} />
             <Route path='/profile' element={<Profile />} />
-            <Route path='/moviePreview' element={<MoviePreview />} />
+            <Route path='/details/:id' element={<Details />} />
         </Routes>
     )
 }

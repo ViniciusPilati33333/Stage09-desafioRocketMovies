@@ -1,7 +1,6 @@
 import { Container, Form, } from './styles';
 import { Header } from "../../components/Header";
 import { ButtonText } from '../../components/ButtonText';
-import { Button } from '../../components/Button'
 import { FiArrowLeft, FiX } from 'react-icons/fi';
 
 import { Input } from '../../components/Input';
