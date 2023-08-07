@@ -13,7 +13,6 @@ export const Container = styled.div`
 
     > main {
       grid-area: "content";
-      overflow-y: auto;
     }
 `;
 
@@ -48,27 +47,8 @@ export const NewMovie = styled.button`
     height: 20px;
   }
 `;
-export const Movies = styled.div`
-  width: 85%;
-  height: 220px;
-  border-radius: 10px;
-  background: ${({ theme }) => theme.COLORS.CARD};
-  margin: 24px 130px 24px 100px;
-  padding: 32px 32px;
 
-  > span {
-    color: ${({ theme }) => theme.COLORS.DESC};
-    background: none;
-    font-weight: 500;
-    margin-bottom: 15px;
 
-    overflow: hidden; // Removendo barra de rolagem
-    text-overflow: ellipsis; // Adicionando "..." ao final
-    display: -webkit-box;
-    -webkit-line-clamp: 2; // Quantidade de linhas
-    -webkit-box-orient: vertical;
-  }
-`;
 
  
 
